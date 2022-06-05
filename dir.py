@@ -20,11 +20,11 @@ def msgload():
 	print("""
 █▀▄ █ █▀█   █▀▀ █ █▄░█ █▀▄ █▀▀ █▀█
 █▄▀ █ █▀▄   █▀░ █ █░▀█ █▄▀ ██▄ █▀▄""")
-	print("Feito por horizon.sh")
+	print("Feito por horizon.sh\n")
 	inputs()
 
 def inputs():
-	website = input(f"Website:{bcolors.GREEN} ")
+	website = input(f"Website:{bcolors.OKGREEN} ")
 	loops(website)
 
 
@@ -33,12 +33,12 @@ def loops(website):
 		lista = website + lista.rstrip('\n')
 		r = requests.get(lista)
 		if r.status_code != 404:
-			print(f"{bcolors.OKGREEN} [+] {lista} {bcolors.ENDC}")
+			print(f"{bcolors.OKGREEN}[+] {lista} {bcolors.ENDC}")
 
 try:
 	msgload()
 except (KeyboardInterrupt):
-	print(f"{bcolors.WARNING} \n Voce me fechou :( {bcolors.ENDC}")
+	print(f"{bcolors.WARNING}\n Voce me fechou :( {bcolors.ENDC}")
 except (Exception) as e:
 	print(f"{bcolors.FAIL}\n Erro {bcolors.ENDC} \n\n {e}")
 
