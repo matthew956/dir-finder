@@ -27,7 +27,6 @@ def inputs():
 	website = input(f"Website:{bcolors.OKGREEN} ")
 	loops(website)
 
-
 def loops(website):
 	for lista in  dir_list.readlines():
 		lista = website + lista.rstrip('\n')
@@ -41,5 +40,3 @@ except (KeyboardInterrupt):
 	print(f"{bcolors.WARNING}\n Voce me fechou :( {bcolors.ENDC}")
 except (Exception) as e:
 	print(f"{bcolors.FAIL}\n Erro {bcolors.ENDC} \n\n {e}")
-
-
