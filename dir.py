@@ -17,26 +17,27 @@ def clear():
 	os.system('cls|clear')
 
 def msgload():
+	clear()
 	print("""
 █▀▄ █ █▀█   █▀▀ █ █▄░█ █▀▄ █▀▀ █▀█
-█▄▀ █ █▀▄   █▀░ █ █░▀█ █▄▀ ██▄ █▀▄""")
-	print("Feito por horizon.sh\n")
+█▄▀ █ █▀▄   █▀░ █ █░▀█ █▄▀ ██▄ █▀▄\n""")
+	print("Feito por horizon.sh")
 	inputs()
 
 def inputs():
-	website = input(f"Website:{bcolors.OKGREEN} ")
+	website = input(f"Website:{bcolors.GREEN} ")
 	loops(website)
 
 def loops(website):
-	for lista in  dir_list.readlines():
+	for lista in dir_list.readlines():
 		lista = website + lista.rstrip('\n')
 		r = requests.get(lista)
-		if r.status_code != 404:
-			print(f"{bcolors.OKGREEN}[+] {lista} {bcolors.ENDC}")
+		if r.status_code != 2404:
+			print(f"{bcolors.OKGREEN} [+] {lista} {bcolors.ENDC}")
 
 try:
 	msgload()
 except (KeyboardInterrupt):
-	print(f"{bcolors.WARNING}\n Voce me fechou :( {bcolors.ENDC}")
+	print(f"{bcolors.WARNING} \n Voce me fechou :( {bcolors.ENDC}")
 except (Exception) as e:
 	print(f"{bcolors.FAIL}\n Erro {bcolors.ENDC} \n\n {e}")
