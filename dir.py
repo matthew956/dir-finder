@@ -25,7 +25,7 @@ def msgload():
 	inputs()
 
 def inputs():
-	website = input(f"Website:{bcolors.GREEN} ")
+	website = input(f"Website:{bcolors.OKGREEN} ")
 	loops(website)
 
 def loops(website):
