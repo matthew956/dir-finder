@@ -17,6 +17,6 @@
 ## 🚀 Installation
 
 ```bash
-git clone https://github.com/yourusername/dir-finder.git
-cd dir-finder
-python3 dir-finder.py -h
+git clone https://github.com/matthew956/dir-finder.git
+cd dir-finder/
+python3 dir.py -h
