@@ -24,7 +24,7 @@ def msgload(url, wordlist, thread_num, filter_code):
 |  _  |  |   _|   _|  |     |  _  |  -__|   _|
 |_____|__|__| |__| |__|__|__|_____|_____|__|  \n""")
     print(f"{bcolors.OKGREEN}Made by horizon.sh{bcolors.ENDC}")
-    print("[!] legal disclaimer: Usage of LFIchecker for attacking targets without prior mutual consent is illegal.")
+    print("[!] legal disclaimer: Usage of dirfinder for attacking targets without prior mutual consent is illegal.")
     print("\n===============================")
     print(f"{bcolors.OKGREEN}URL:{bcolors.ENDC} {url}")
     print(f"{bcolors.OKGREEN}Wordlist:{bcolors.ENDC} {wordlist}")
